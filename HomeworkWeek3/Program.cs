@@ -26,9 +26,10 @@ namespace HomeworkWeek3
             DateTime dateOfBirth = new DateTime(year, month, day);
 
             //Age
+            double daysPerYear = 365.25;
             TimeSpan timeSpan = DateTime.Now - dateOfBirth;
             double ageInDays = timeSpan.TotalDays;
-            double actualAge = ageInDays / 365;
+            double actualAge = ageInDays / daysPerYear;
         }
 
         static void Main(string[] args)
